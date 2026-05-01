@@ -486,14 +486,19 @@ function saveModules(modules) {
 function initData() {
     if (!localStorage.getItem(STORAGE_KEYS.MODULES)) {
         saveModules([
-            { id: 1, name: '金蝶财务系统', url: 'https://kingdee.hailiang.com', description: '企业财务核算、报表管理、预算控制一体化平台', icon: 'fas fa-dollar-sign', category: '财务系统', updateTime: new Date().toLocaleDateString() },
-            { id: 2, name: '用友NC系统', url: 'https://yonyou.hailiang.com', description: '集团财务管控、合并报表、资产管理', icon: 'fas fa-chart-pie', category: '财务系统', updateTime: new Date().toLocaleDateString() },
-            { id: 3, name: 'CRM客户管理系统', url: 'https://crm.hailiang.com', description: '客户关系管理、销售漏斗、商机跟踪', icon: 'fas fa-users', category: '业务系统', updateTime: new Date().toLocaleDateString() },
-            { id: 4, name: 'ERP企业资源计划', url: 'https://erp.hailiang.com', description: '采购、库存、生产、销售全流程管理', icon: 'fas fa-building', category: '业务系统', updateTime: new Date().toLocaleDateString() },
-            { id: 5, name: 'OA办公自动化', url: 'https://oa.hailiang.com', description: '流程审批、公文管理、协同办公', icon: 'fas fa-envelope', category: '业务系统', updateTime: new Date().toLocaleDateString() },
-            { id: 6, name: 'AI智能助手', url: 'https://ai.hailiang.com', description: '智能问答、文档处理、数据分析助手', icon: 'fas fa-robot', category: '新生产力工具', updateTime: new Date().toLocaleDateString() },
-            { id: 7, name: '低代码开发平台', url: 'https://lowcode.hailiang.com', description: '可视化应用搭建，快速响应业务需求', icon: 'fas fa-code-branch', category: '新生产力工具', updateTime: new Date().toLocaleDateString() },
-            { id: 8, name: '数据可视化大屏', url: 'https://dashboard.hailiang.com', description: '业务数据实时监控、智能分析报表', icon: 'fas fa-chart-line', category: '新生产力工具', updateTime: new Date().toLocaleDateString() }
+            { id: 1, name: '财务共享平台', url: 'https://hfins.hailiangedu.com:7443/workplace', description: '财务共享作业平台', icon: 'fas fa-dollar-sign', category: '财务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 2, name: '见知', url: 'http://10.10.21.187:9193/xencio/#!/passport/login', description: '财务资金流水管理平台', icon: 'fas fa-chart-pie', category: '财务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 3, name: 'FONE', url: 'http://10.10.21.182:8080/login', description: '财务预算管理平台', icon: 'fas fa-users', category: '财务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 4, name: '合思报销', url: 'https://app.ekuaibao.com/web/app.html#/login/', description: '财务报销管理平台', icon: 'fas fa-users', category: '财务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 5, name: '会计电子档案', url: 'http://10.10.21.142:8586/web/app.html#/dashboard', description: '财务会计电子档案管理平台', icon: 'fas fa-users', category: '财务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 6, name: '云账房', url: 'https://account.yunzhangfang.com/vac/login', description: '财务税务一体化管理平台', icon: 'fas fa-users', category: '财务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 7, name: '数据湖', url: 'https://iam.ehailiang.com/selfcare/', description: '财务数据湖管理平台', icon: 'fas fa-users', category: '财务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 8, name: 'MDM', url: 'https://mdm.ehailiang.com/homdm/mdm/list', description: '主数据管理平台', icon: 'fas fa-building', category: '业务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 9, name: '海鼎食材', url: 'https://machining.hailiangedu.com/auth/login', description: '海鼎食材业务管理平台', icon: 'fas fa-envelope', category: '业务系统', updateTime: new Date().toLocaleDateString() },
+            { id: 10, name: 'OMO', url: 'https://school.hlestudy.com/manage/login', description: '第二课堂业务管理平台', icon: 'fas fa-envelope', category: '业务系统', updateTime: new Date().toLocaleDateString() },     
+            { id: 11, name: 'GITHub', url: 'https://github.com/lulijun2026/hailiang-portal/edit/main/index.html', description: '网页生产平台', icon: 'fas fa-robot', category: '新生产力工具', updateTime: new Date().toLocaleDateString() },
+            { id: 12, name: 'Replit', url: 'https://replit.com/~', description: '可视化APP应用搭建，快速响应业务需求', icon: 'fas fa-code-branch', category: '新生产力工具', updateTime: new Date().toLocaleDateString() },
+            { id: 13, name: '海亮大脑', url: 'https://data.hailiang.com/workspace/dashboard?workspaceId=91d55df1-324a-4dad-ac94-a57391e0393a', description: '业务数据实时监控、智能分析报表', icon: 'fas fa-chart-line', category: '新生产力工具', updateTime: new Date().toLocaleDateString() }
         ]);
     }
     if (!localStorage.getItem(STORAGE_KEYS.SETTINGS)) {
